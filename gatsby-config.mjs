@@ -33,6 +33,17 @@ const config = {
         path: `${__dirname}/src/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/posts`, // Include images for posts
+      },
+    },
+
+    `gatsby-plugin-image`, // For optimized images
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
 

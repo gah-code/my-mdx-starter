@@ -1,55 +1,56 @@
-// import React from 'react';
-// import { graphql } from 'gatsby';
-
-// export default function PostTemplate({ data: { mdx }, children }) {
-//   const { frontmatter } = mdx;
-
-//   return (
-//     <main style={{ margin: '0 auto', maxWidth: '700px' }}>
-//       <h1>{frontmatter.title}</h1>
-//       <p style={{ fontStyle: 'italic' }}>Published on {frontmatter.date}</p>
-
-//       {/* Here’s where your MDX content actually renders */}
-//       {children}
-//     </main>
-//   );
-// }
-
-// export const query = graphql`
-//   query PostTemplateQuery($id: String!) {
-//     mdx(id: { eq: $id }) {
-//       frontmatter {
-//         title
-//         date(formatString: "MMMM DD, YYYY")
-//       }
-//     }
-//   }
-// `;
-
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
 
 export default function PostTemplate({ data: { mdx }, children }) {
   const { frontmatter } = mdx;
+  const image = getImage(frontmatter.image);
 
   return (
     <Layout>
-      <h1>{mdx.frontmatter.title}</h1>
-      <p style={{ fontStyle: 'italic' }}>Published on {frontmatter.date}</p>
+      <article>
+        {/* Post Image */}
+        <GatsbyImage image={image} alt={frontmatter.imageAlt} />
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.excerpt}</p>
 
-      {/* Render the actual MDX content */}
-      {children}
+        {/* Category Link */}
+        <p>
+          <strong>Category:</strong>{' '}
+          <Link to={`/tags/${frontmatter.category.toLowerCase()}/`}>
+            {frontmatter.category}
+          </Link>
+        </p>
+
+        {/* Author */}
+        <p>
+          <strong>Author:</strong> {frontmatter.author}
+        </p>
+
+        {/* Post Content */}
+        {children}
+      </article>
     </Layout>
   );
 }
 
+// GraphQL Query
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        slug
+        excerpt
+        category
+        author
+        image {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, width: 300, height: 200)
+          }
+        }
+        imageAlt
       }
     }
   }

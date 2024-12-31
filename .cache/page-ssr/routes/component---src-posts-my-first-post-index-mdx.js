@@ -23,194 +23,71 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     h1: "h1",
     p: "p",
-    code: "code",
-    img: "img",
     pre: "pre",
-    span: "span",
-    blockquote: "blockquote",
-    strong: "strong",
-    ul: "ul",
-    li: "li",
-    hr: "hr"
+    code: "code",
+    span: "span"
   }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.h1, null, "title"), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.p, null, "This is a post using MDX. It's living in ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.code, null, "src/posts/my-first-post/index.mdx"), "."), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.img, {
-    src: "./example-image.png",
-    alt: "An example image in the same folder"
-  }), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.p, null, "Let’s try a small React snippet:"), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.pre, {
-    className: "language-js"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.h1, null, "Introducing New Features"), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.p, null, "Discover the latest updates and improvements in this release."), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.pre, {
+    className: "language-javascript"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.code, {
-    className: "language-js code-highlight"
+    className: "language-javascript code-highlight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "code-line"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token keyword module"
-  }, "import"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token imports"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "{"), " useState ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "}")), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token keyword module"
-  }, "from"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token string"
-  }, "'react'"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ";"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token keyword"
-  }, "function"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token function"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token maybe-class-name"
-  }, "Toggle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ")"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "{"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token keyword"
   }, "const"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "["), "isOn", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ","), " setIsOn", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "]"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token function-variable function"
+  }, "greet"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token operator"
   }, "="), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token function"
-  }, "useState"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token punctuation"
   }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token boolean"
-  }, "false"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ";"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token keyword control-flow"
-  }, "return"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "("), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "    ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "      ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), "button onClick", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "="), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "{"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token parameter"
+  }, "name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token punctuation"
   }, ")"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token arrow operator"
   }, "=>"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token function"
-  }, "setIsOn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "!"), "isOn", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "}"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "        ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "{"), "isOn ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "?"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token template-string"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token template-punctuation string"
+  }, "`"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token string"
-  }, "'Turn Off'"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ":"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+  }, "Hello, "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token interpolation"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token interpolation-punctuation punctuation"
+  }, "${"), "name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token interpolation-punctuation punctuation"
+  }, "}")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token string"
-  }, "'Turn On'"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "}"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "      ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "/"), "button", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "      ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "{"), "isOn ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "&&"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), "p", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token maybe-class-name"
-  }, "It’s"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token constant"
-  }, "ON"), " now", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
   }, "!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "/"), "p", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, "}"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "    ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "/"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token punctuation"
-  }, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token template-punctuation string"
+  }, "`")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token punctuation"
   }, ";"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "code-line"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token console class-name"
+  }, "console"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token punctuation"
-  }, "}"), "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, "\n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "code-line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token maybe-class-name"
-  }, "Toggle"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, "/"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
-    className: "token operator"
-  }, ">"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+  }, "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token method function property-access"
+  }, "log"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
     className: "token punctuation"
-  }, ";"), "\n"))), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.blockquote, null, "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.p, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.strong, null, "Note"), ":"), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.ul, null, "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.li, null, "In MDX v4, referencing ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.code, null, "frontmatter.title"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.strong, null, "in the heading"), " like ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.code, null, "# {frontmatter.title}"), " may trigger an undefined variable error unless you explicitly export the same frontmatter. A simpler approach is to just type the title again or let the template handle it. If you see an error, remove or adjust that reference."), "\n"), "\n"), "\n", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.hr));
+  }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token function"
+  }, "greet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token punctuation"
+  }, "("), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token string"
+  }, "'Gatsby'"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token punctuation"
+  }, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token punctuation"
+  }, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components.span, {
+    className: "token punctuation"
+  }, ";"), "\n"))));
 }
 function MDXContent(props = {}) {
   const {
