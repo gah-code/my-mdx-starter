@@ -26,7 +26,7 @@ node_modules/
 # Build artifacts
 public/
 .cache/
-
+.cache
 # Environment variables
 .env*
 
