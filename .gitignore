@@ -1,3 +1,79 @@
+### Node.js ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
 node_modules/
+
+# Editor and IDE files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Build artifacts
+public/
 .cache/
-.package-lock.json
+
+# Environment variables
+.env*
+
+# Gatsby files
+.cache/
+public/
+.gatsby/
+
+# npm package files
+package-lock.json
+yarn.lock
+
+# Git
+*.orig
+
+# Ignore all test coverage files
+coverage/
+
+# Ignore gatsby and prism-related files
+.prisma/
+
+# Ignore logs
+npm-debug.log
+debug.log
+
+# Ignore generated files
+*.min.js
+*.min.css
+*.min.map
+
+# Ignore markdown preview output
+*.mdx-output
+
+# Miscellaneous
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+*.local
+
+# Ignore VS Code workspace
+.vscode/
+
+# Ignore IDE configurations
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
