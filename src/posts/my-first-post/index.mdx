@@ -1,0 +1,37 @@
+---
+title: 'My First Post'
+slug: '/my-first-post'
+date: '2024-12-31'
+---
+
+# title
+
+This is a post using MDX. It's living in `src/posts/my-first-post/index.mdx`.
+
+![An example image in the same folder](./example-image.png)
+
+Let’s try a small React snippet:
+
+```js
+import { useState } from 'react';
+
+function Toggle() {
+  const [isOn, setIsOn] = useState(false);
+  return (
+    <>
+      <button onClick={() => setIsOn(!isOn)}>
+        {isOn ? 'Turn Off' : 'Turn On'}
+      </button>
+      {isOn && <p>It’s ON now!</p>}
+    </>
+  );
+}
+
+<Toggle />;
+```
+
+> **Note**:
+>
+> - In MDX v4, referencing `frontmatter.title` **in the heading** like `# {frontmatter.title}` may trigger an undefined variable error unless you explicitly export the same frontmatter. A simpler approach is to just type the title again or let the template handle it. If you see an error, remove or adjust that reference.
+
+---
