@@ -44,6 +44,7 @@ const config = {
     `gatsby-plugin-image`, // For optimized images
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
   ],
 };
 

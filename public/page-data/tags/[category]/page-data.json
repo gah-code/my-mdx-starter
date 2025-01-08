@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-pages-tags-[category]-js","path":"/tags/[category]/","result":{"errors":[{"message":"Variable \"$category\" of required type \"String!\" was not provided.","locations":[{"line":1,"column":87}]}],"pageContext":{}},"staticQueryHashes":[],"slicesMap":{},"matchPath":"/tags/:category"}

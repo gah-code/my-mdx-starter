@@ -1,6 +1,6 @@
-# Gatsby MDX Prisma Blog Starter
+# Gatsby MDX Prisma Blog Starter - Development Notes
 
-This project is a **Gatsby MDX Blog Starter** that supports dynamic MDX pages, category filtering, and pagination. It leverages **Gatsby** and **MDX** to create a modern, component-driven blog with optimized image handling and syntax highlighting.
+This project is a **Gatsby MDX Prisma Blog Starter** that supports dynamic MDX pages, category filtering, and pagination. It leverages **Gatsby** and **MDX** to create a modern, component-driven blog with optimized image handling and syntax highlighting.
 
 ---
 
@@ -13,7 +13,14 @@ This project is a **Gatsby MDX Blog Starter** that supports dynamic MDX pages, c
 - **Optimized Images**: Uses `gatsby-plugin-image` for responsive, optimized images.
 - **Syntax Highlighting**: Code blocks use **PrismJS** for styling.
 - **Layouts**: Shared layouts for consistent design.
-- **ESM Syntax**: Uses modern ES modules for configuration.
+- **Sidebar Menu:**
+  - Opens and closes using a smooth transition.
+  - Includes an overlay that closes the menu when clicked outside.
+- **Reusable Components:**
+  - Organized components such as `Header`, `Footer`, `MobileNav`, `HamburgerButton`, and `Overlay`.
+  - Styled components with Emotion for consistent styling.
+- **Accessibility Enhancements:**
+  - Focusable and clickable elements for keyboard and mouse interaction.
 
 ---
 
@@ -27,7 +34,17 @@ my-mdx-starter
 ├── package.json               # Dependencies and scripts
 ├── src
 │   ├── components
-│   │   └── layout.jsx         # Shared layout for pages and posts
+│   ├── layout/
+│   │   ├── Layout.jsx   # Shared layout for pages and posts
+│   │   ├── Header.jsx
+│   │   ├── Navigation.jsx
+│   │   ├── MobileNav.jsx
+│   │   ├── Footer.jsx
+│   │   ├── HamburgerButton.jsx
+│   │   └── Overlay.jsx
+│   ├── common/
+│   │   ├── StyledComponents.jsx # Shared styled components
+│   │   └── GlobalStyles.jsx     # Global styles
 │   ├── pages
 │   │   ├── index.js           # Homepage
 │   │   ├── about.js           # About page
