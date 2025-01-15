@@ -1,5 +1,7 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import path from 'path'; // <-- Import 'path' module for ESM
+
 import rehypePrism from 'rehype-prism-plus';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -17,6 +19,12 @@ const config = {
           // rehype-prism-plus should be placed in rehypePlugins
           remarkPlugins: [],
           rehypePlugins: [rehypePrism],
+        },
+        defaultLayouts: {
+          default: path.resolve(
+            __dirname,
+            './src/components/layout/Layout.jsx'
+          ),
         },
       },
     },
